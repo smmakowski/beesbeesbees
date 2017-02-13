@@ -9,6 +9,11 @@ var ForagerBee = function() {
 ForagerBee.prototype = Object.create(Bee.prototype);
 ForagerBee.prototype.constructor = ForagerBee;
 ForagerBee.prototype.forage = function(treasure) {
-	this.treasureChest.push(treasure);
-}
+	if (this.age === 10){
+		this.treasureChest.push(treasure);
+	} else {
+		return 'I am too old, let me play cards instead';
+	}
+};
+	
 
