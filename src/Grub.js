@@ -5,5 +5,5 @@ var Grub = function() {
 };
 
 Grub.prototype.eat = function(food){
-	
+	return food === this.food ?'It can be eaten' : 'It cannot be eaten';
 }
